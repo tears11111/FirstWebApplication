@@ -1,0 +1,54 @@
+.flip
+{
+    
+}
+
+.flipBody
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 200px 0px 0px 150px;
+    transition: all 0.8s ease 0s;
+    transform-style: preserve-3d;
+}
+
+.flipFront,
+.flipBack
+{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flipFront
+{
+    z-index: 2;
+    transform: rotateY(0deg);
+    background-color: grey;
+    background-color: #F25344;
+    font-size: 30px;
+    font-weight: bold;
+    color: #12110f;
+    
+    backface-visibility: hidden;
+}
+
+.flipBack
+{
+    transform: rotateY(-180deg);
+    background-color: grey;
+    font-size: 20px;
+    color: white;
+}
+
+.flip:hover .flipBody
+{
+    transform: rotateY(-180deg);
+}
+

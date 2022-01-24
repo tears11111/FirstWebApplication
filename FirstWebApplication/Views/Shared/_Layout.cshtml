@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <script src="lib/bootstrap.min.js"></script>
+    <script src="lib/jquery-3.6.0.min.js"></script>
+    <script src="lib/jquery-ui.js"></script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/transform.css" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html">All About Games</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="CyberSportHistory.html">Cybersport history</a></li>
+                    <li><a href="Games.html" class="games">Games</a></li>
+                    <li><a href="News.html" class="news">News</a></li>
+                    <li><a href="Tournaments.html" class="tournaments">Tournaments</a></li>
+                    <li><a href="AboutUs.html">About us</a></li>
+                    <li><a href="Crossword.html">Crossword</a></li>
+                </ul>
+            </div>
+            
+            <div class="topMenu">    
+                <div class="visibleMenu">
+                    <h3>Games</h3>
+                    <div class="subMenu">
+                        <ul>
+                            <li><a href="#">Dota2</a></li>
+                            <li><a href="#">CS:GO</a></li>
+                            <li><a href="#">Siege</a></li>
+                            <li><a href="#">PUBG</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="subMenu">
+                        <ul>
+                            <li><a href="#">Valorant</a></li>
+                            <li><a href="#">Overwatch</a></li>
+                            <li><a href="#">Fortnite</a></li>
+                            <li><a href="#">Apex</a></li>
+                        </ul>
+                    </div>
+
+                     <div class="subMenu">
+                         <ul>
+                             <li><a href="#">Hearthstone</a></li>
+                             <li><a href="#">Rocket</a></li>
+                             <li><a href="#">Warzone</a></li>
+                             <li><a href="#">LoL</a></li>
+                         </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="newsMenu">
+                <a href="News.html">...</a>
+            </div>
+            
+            <div class="tournamentsMenu">
+                <a href="Tournaments.html">...</a>
+            </div>
+        </nav>  
+    </header>
+
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
