@@ -1,6 +1,12 @@
-﻿namespace FirstWebApplication.Controllers
+﻿using Microsoft.AspNetCore.Mvc;
+
+namespace FirstWebApplication.Controllers
 {
-    public class HomeController
+    public class HomeController : Controller
     {
+        public IActionResult Index()
+        {
+            return View();
+        }
     }
 }
