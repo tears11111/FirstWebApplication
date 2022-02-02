@@ -3,27 +3,27 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <script src="lib/bootstrap.min.js"></script>
-    <script src="lib/jquery-3.6.0.min.js"></script>
-    <script src="lib/jquery-ui.js"></script>
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/transform.css" />
+    <script src="~/lib/bootstrap.min.js"></script>
+    <script src="~/lib/jquery-3.6.0.min.js"></script>
+    <script src="~/lib/jquery-ui.js"></script>
+    <link rel="stylesheet" href="~/css/reset.css" />
+    <link rel="stylesheet" href="~/css/style.css" />
+    <link rel="stylesheet" href="~/css/transform.css" />
     <meta name="viewport" content="width=device-width" />
     <title>@ViewData["Title"]</title>
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo"><a href="~/Home">All About Games</a></div>
+            <div class="logo"><a href="~/Home/Index">All About Games</a></div>
             <div class="menu">
                 <ul>
-                    <li><a href="CyberSportHistory.html">Cybersport history</a></li>
-                    <li><a href="Games.html" class="games">Games</a></li>
-                    <li><a href="News.html" class="news">News</a></li>
-                    <li><a href="Tournaments.html" class="tournaments">Tournaments</a></li>
-                    <li><a href="AboutUs.html">About us</a></li>
-                    <li><a href="Crossword.html">Crossword</a></li>
+                    <li><a href="~/Home/CybersportHistory">Cybersport history</a></li>
+                    <li><a href="~/Home/Games" class="games">Games</a></li>
+                    <li><a href="~/Home/News" class="news">News</a></li>
+                    <li><a href="~/Home/Tournaments" class="tournaments">Tournaments</a></li>
+                    <li><a href="~/Home/AboutUs">About us</a></li>
+                    <li><a href="~/Home/Crossword">Crossword</a></li>
                 </ul>
             </div>
             
@@ -69,7 +69,7 @@
         </nav>  
     </header>
 
-    <div>
+    <div class="LayoutBody">
         @RenderBody()
     </div>
 </body>
